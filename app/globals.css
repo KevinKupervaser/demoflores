@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar hiding */
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Custom flower shop theme utilities */
+@layer utilities {
+  .line-clamp-2 {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Set a subtle background for the entire page */
+body {
+  background-color: rgba(243, 209, 172, 0.507);
+}
+
+/* Add to globals.css */
+.custom-toast-container {
+  font-family: inherit;
+}
+
+.custom-toast {
+  border-radius: 12px !important;
+  box-shadow: 0 8px 32px rgba(56, 81, 62, 0.15) !important;
+  border: 1px solid rgba(243, 209, 172, 0.2) !important;
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #38513e 0%, #576d56 100%) !important;
+  color: white !important;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #ac572e 0%, #5c462e 100%) !important;
+  color: white !important;
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #576d56 0%, #38513e 100%) !important;
+  color: white !important;
+}
+
+.custom-progress-bar {
+  background-color: #f3d1ac !important;
+}
+
+.Toastify__close-button {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.Toastify__close-button:hover {
+  color: white !important;
+}
