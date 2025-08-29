@@ -159,7 +159,7 @@ export default function ProductTable(props: Props) {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 pt-40">
+    <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 pt-60">
       <div className="max-w-7xl mx-auto">
         {/* Header Section with Integrated Search */}
         <div className="bg-white rounded-2xl shadow-sm border border-gray-200 mb-8">
