@@ -20,8 +20,8 @@ export const authOptions: NextAuthOptions = {
         // send request to your api route where you can sign in you user and send error or success response to this function.
         const { user, error } = await fetch(
           // deployment
-          "http://localhost:3000/api/users/signin",
-          // process.env.API_SING_IN_ENDPOINT!,
+          // "http://localhost:3000/api/users/signin",
+          process.env.API_SING_IN_ENDPOINT!,
           {
             method: "POST",
             body: JSON.stringify({ email, password }),
